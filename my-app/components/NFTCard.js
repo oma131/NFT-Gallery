@@ -14,6 +14,7 @@ export default function NFTCard({ nft }) {
 
   const copyAddressToClipboard = () => {
     navigator.clipboard.writeText(nft.contract.address);
+    alert("Copied");
   };
 
   return (
